@@ -1,0 +1,53 @@
+.ui-selectmenu.ui-popup .ui-input-search {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+.ui-selectmenu.ui-dialog .ui-content {
+    padding-top: 0;
+}
+.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+    margin-top: 0;
+}
+.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+    border-top-width: 1px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+.ui-selectmenu.ui-dialog .ui-header {
+    border-bottom-width: 1px;
+}
+
+.ui-grid-a {
+    margin: 20px;
+}
+
+.ui-block-a{
+    margin-top: 20px;
+}
+
+.ui-block-b{
+    margin: 32px 0px 0px 0px;
+}
+
+.ui-grid-a>.ui-block-a{
+    float: left;
+    width: 60%;
+}
+
+.ui-grid-a>.ui-block-b{
+    width: 40%;
+}
+
+.ui-field-contain{
+    margin: 20px;
+}
+
+#ch-event-cat {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#submit-btn {
+	margin-left: 20px;
+	margin-right: 20px;
+}
