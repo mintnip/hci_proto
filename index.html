@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="vendor/waves/waves.min.css">
     <link rel="stylesheet" href="vendor/wow/animate.css">
     <link rel="stylesheet" href="css/nativedroid2.css">
-    <!-- <link rel="stylesheet" href="css/jquerymobile-1.4.5.css"> -->
-    <!-- <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" href="a3r.css">
     <!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
     <!--<link href="create_event.css" rel="stylesheet" type="text/css">    -->
     <style>
@@ -30,10 +29,6 @@
 
     .ui-grid-a>.ui-block-b{
         width: 40%;
-    }
-
-    #signout{
-        color: #f44e03;
     }
     </style>
        
@@ -57,59 +52,18 @@
     <!-- "Create Event" page -->
       
     <div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
-        <!-- left panel   -->
-        <div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true">
-            <div class='nd2-sidepanel-profile wow fadeInDown'>
-                <img class='profile-background' src="http://lorempixel.com/400/200/abstract/7/" />
-                <div class="row">
-                    <div class='col-xs-4 center-xs'>
-                        <div class='box'>
-                            <img class="profile-thumbnail" src="https://ccl.northwestern.edu/Staff%20Pics/mike-horn.jpeg" />
-                        </div>
-                    </div>
-                    <div class='col-xs-8'>
-                        <div class='box profile-text'>
-                            <strong>Mike Horn</strong>
-                            <span class='subline'>Assistant Professor</span>
-                        </div>
-                    </div>          
-                </div>  
-            </div> 
-
-            <ul data-role="listview" data-icon="false">
-                <li class="ui-last-child"><a href="homepage.html" data-ajax='false' data-icon="false">Home</a></li>
-            </ul>
-            <hr class="inset">  
-            <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
-                <h3>Events</h3>
-                <ul data-role="listview" data-icon="false" class="ui-listview">
-                    <li class="ui-first-child"><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-                    <li><a href="starred.html" data-ajax='false' data-icon="false">Starred</a></li>
-                    <li><a href="homepage.html" data-ajax='false' data-icon="false">Recommended Events</a></li>
-                    <li><a href="index.html" data-ajax='false' data-icon="false">Create Event</a></li>
-                    <li class="ui-last-child"><a href="filter.html" data-ajax='false' data-icon="false">Filter Events</a></li>
-                </ul>
-            </div>
-
-            <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
-                <h3>Account</h3>
-                <ul data-role="listview" data-icon="false">
-                        <li class="ui-first-child"><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-                        <li class="ui-last-child"><a href="editprofile.html" data-ajax='false'>Edit Profile</a></li>
-                </ul>
-            </div>
-            <hr class="inset">
-            <ul data-role="listview" data-icon="false">
-                <li class="ui-first-child"><a href="settings.html" data-ajax='false'>Settings</a></li>
-                <li class="ui-last-child" id="signout"><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
-            </ul>
-            <!--<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
-        </div>
-        <!-- /left panel -->
+        <nd2-include data-src="panel.left.html"></nd2-include>
 
         <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
             <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
             <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
+            <a href="#Search" data-rel="popup" data-icon="search" data-iconpos="notext">Search</a>
+        </div>
+
+        <div data-role="popup" id="Search" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+            <p>Let's search for the meaning of life!</p>
+            <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
         </div>
 
         <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
@@ -135,7 +89,7 @@
         
             <label>Event Category</label>
         <!--<div id="ch-event-cat">-->
-            <select id="title-filter-menu" data-native-menu="false" class="filterable-select">
+            <select id="title-filter-menu" data-native-menu="false" class="filterable-select" data-filter-placeholder="Search event categories...">
             <option value="archery">Archery</option>
             <option value="badminton">Badminton</option>
             <option value="basketball">Basketball</option>
@@ -225,6 +179,7 @@
         </form>  
         </div>
     </div>
+    <!-- /Create Event Page -->
   
     <!-- "Create A Profile" page -->
   
