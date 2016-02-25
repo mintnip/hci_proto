@@ -14,6 +14,28 @@
     <!-- <link href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.css" rel="stylesheet" type="text/css" > -->
     <!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
     <!--<link href="create_event.css" rel="stylesheet" type="text/css">    -->
+    <style>
+    .ui-grid-a {
+        margin: 20px;
+    }
+
+    .ui-block-a{
+        margin-top: 20px;
+    }
+
+    .ui-block-b{
+        margin: 32px 0px 0px 0px;
+    }
+
+    .ui-grid-a>.ui-block-a{
+        float: left;
+        width: 60%;
+    }
+
+    .ui-grid-a>.ui-block-b{
+        width: 40%;
+    }
+    </style>
        
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="vendor/waves/waves.min.js"></script>
@@ -23,7 +45,7 @@
 
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
-    <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
+    <script type="text/javascript" src="https://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
     <script src="create_event.js"></script>
 
     <title>Event Page</title>
@@ -169,13 +191,14 @@
         </fieldset>
     </div>
     
-    <div class="ui-grid-a2">
+    <div class="ui-grid-a">
     
-    <div class="box">            
+    <div class="ui-block-a">
         <label for="spin">No. of Participants</label>
         <input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
+    </div>
 
-    <!--<div class="ui-block-b2">-->
+    <div class="ui-block-b">
         <fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
         <input type="radio" name="radio-choice-1" id="radio-choice-1b" value="preferred" checked="checked">
         <label for="radio-choice-1b">Preferred</label>
