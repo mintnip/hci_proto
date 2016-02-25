@@ -35,70 +35,70 @@
     <!-- "Create Event" page -->
       
     <div data-role="page" class="nd2-no-menu-swipe">
-    
+
     <div data-role="header" data-position="fixed">
         <a href="#MenuPanel" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
-        <h1>Create Event</h1>
+        <h1 class="wow fadeIn ui-title" data-wow-delay="0.4s" role="heading" aria-level="1" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;">Create Event</h1>
+    
+        <!-- menu panel   -->
+        <div data-role="panel" id="MenuPanel" data-display="overlay" data-position-fixed="true">
+            <div class='nd2-sidepanel-profile wow fadeInDown'>
+                <img class='profile-background' src="http://lorempixel.com/400/200/abstract/7/" />
+                <div class="row">
+                    <div class='col-xs-4 center-xs'>
+                        <div class='box'>
+                            <img class="profile-thumbnail" src="http://ccl.northwestern.edu/Staff%20Pics/mike-horn.jpeg" />
+                        </div>
+                    </div>
+                    <div class='col-xs-8'>
+                        <div class='box profile-text'>
+                            <strong>Mike Horn</strong>
+                            <span class='subline'>Assistant Professor</span>
+                        </div>
+                    </div>          
+                </div>  
+            </div> 
+
+
+            <ul data-role="listview" data-inset="false">
+                <li><a href="homepage.html" data-ajax='false' data-icon="false">Home</a></li>
+            </ul>
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider">Events</li>
+            </ul>
+            <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">           
+                <h3>Event Options</h3>
+                <ul data-role="listview" data-inset="false" data-icon="false">
+                    <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
+                    <li><a href="starred.html" data-ajax='false' data-icon="false">Starred</a></li>
+                    <li><a href="homepage.html" data-ajax='false' data-icon="false">Recommended Events</a></li>
+                    <li><a href="index.html" data-ajax='false' data-icon="false">Create Event</a></li>
+                    <li><a href="filter.html" data-ajax='false' data-icon="false">Filter Events</a></li>
+                </ul>
+            </div>
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider">Account</li>
+            </ul>
+            <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+                <h3>Account Options</h3>
+                <ul data-role="listview" data-icon="false">
+                    <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
+                    <li><a href="editprofile.html" class="ui-disabled" data-ajax='false'>Edit Profile</a></li>
+                </ul>
+            </div>
+            <hr class="inset">
+            <ul data-role="listview" data-inset="false">
+                <li data-role="list-divider">Options</li>
+            </ul>
+            <ul data-role="listview" data-icon="false">
+                <li><a href="settings.html" data-ajax='false'>Settings</a></li>
+                <li><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
+            </ul>
+            <!--<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
+        </div>
+        <!-- /menu panel -->
     </div>
     
-    <!-- menu panel   -->
-    <div data-role="panel" id="MenuPanel" data-display="overlay" data-position-fixed="true">
-        <div class='nd2-sidepanel-profile wow fadeInDown'>
-            <img class='profile-background' src="http://lorempixel.com/400/200/abstract/7/" />
-            <div class="row">
-                <div class='col-xs-4 center-xs'>
-                    <div class='box'>
-                        <img class="profile-thumbnail" src="http://ccl.northwestern.edu/Staff%20Pics/mike-horn.jpeg" />
-                    </div>
-                </div>
-                <div class='col-xs-8'>
-                    <div class='box profile-text'>
-                        <strong>Mike Horn</strong>
-                        <span class='subline'>Assistant Professor</span>
-                    </div>
-                </div>          
-            </div>  
-        </div> 
-
-
-        <ul data-role="listview" data-inset="false">
-            <li><a href="homepage.html" data-ajax='false' data-icon="false">Home</a></li>
-        </ul>
-        <ul data-role="listview" data-inset="false">
-            <li data-role="list-divider">Events</li>
-        </ul>
-        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">           
-            <h3>Event Options</h3>
-            <ul data-role="listview" data-inset="false" data-icon="false">
-                <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-                <li><a href="starred.html" data-ajax='false' data-icon="false">Starred</a></li>
-                <li><a href="homepage.html" data-ajax='false' data-icon="false">Recommended Events</a></li>
-                <li><a href="index.html" data-ajax='false' data-icon="false">Create Event</a></li>
-                <li><a href="filter.html" data-ajax='false' data-icon="false">Filter Events</a></li>
-            </ul>
-        </div>
-        <ul data-role="listview" data-inset="false">
-            <li data-role="list-divider">Account</li>
-        </ul>
-        <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
-            <h3>Account Options</h3>
-            <ul data-role="listview" data-icon="false">
-                <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-                <li><a href="editprofile.html" class="ui-disabled" data-ajax='false'>Edit Profile</a></li>
-            </ul>
-        </div>
-        <hr class="inset">
-        <ul data-role="listview" data-inset="false">
-            <li data-role="list-divider">Options</li>
-        </ul>
-        <ul data-role="listview" data-icon="false">
-            <li><a href="settings.html" data-ajax='false'>Settings</a></li>
-            <li><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
-        </ul>
-        <!--<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
-    </div>
-    <!-- /menu panel -->
-      
     <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
     <form>
         <label for="text-basic">Event Name</label>
