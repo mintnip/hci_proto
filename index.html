@@ -68,9 +68,7 @@
             </ul>
             <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
                 <h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
-                    <a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d waves-effect waves-button">
-                        Event Options
-                        <span class="ui-collapsible-heading-status"> click to expand contents</span>
+                    <a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d waves-effect waves-button">Event Options<span class="ui-collapsible-heading-status"> click to expand contents</span>
                     </a>
                 </h3>
                 <div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
@@ -87,20 +85,26 @@
             <ul data-role="listview" data-inset="false">
                 <li data-role="list-divider">Account</li>
             </ul>
-            <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
-                <h3>Account Options</h3>
-                <ul data-role="listview" data-icon="false">
-                    <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-                    <li><a href="editprofile.html" class="ui-disabled" data-ajax='false'>Edit Profile</a></li>
-                </ul>
+            <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right" class="ui-collapsible ui-collapsible-themed-content ui-collapsible-collapsed">
+                <h3 class="ui-collapsible-heading ui-collapsible-heading-collapsed">
+                    <a href="#" class="ui-collapsible-heading-toggle ui-btn ui-btn-icon-right ui-btn-inherit ui-icon-carat-d waves-effect waves-button">Account Options<span class="ui-collapsible-heading-status"> click to expand contents</span>
+                    </a>
+                </h3>
+                <div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+                    
+                    <ul data-role="listview" data-icon="false" class="ui-listview">
+                        <li class="ui-first-child"><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
+                        <li class="ui-last-child"><a href="editprofile.html" class="ui-disabled" data-ajax='false'>Edit Profile</a></li>
+                    </ul>
+                </div>
             </div>
             <hr class="inset">
             <ul data-role="listview" data-inset="false">
-                <li data-role="list-divider">Options</li>
+                <li class="ui-first-child" data-role="list-divider">Options</li>
             </ul>
             <ul data-role="listview" data-icon="false">
-                <li><a href="settings.html" data-ajax='false'>Settings</a></li>
-                <li><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
+                <li class="ui-first-child"><a href="settings.html" data-ajax='false'>Settings</a></li>
+                <li class="ui-last-child"><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
             </ul>
             <!--<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
         </div>
