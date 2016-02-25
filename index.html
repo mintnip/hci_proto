@@ -2,9 +2,9 @@
 <html>
 
 <head>
-	
-<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> -->
 <link rel="stylesheet" href="vendor/waves/waves.min.css">
 <link rel="stylesheet" href="vendor/wow/animate.css">
 <link rel="stylesheet" href="css/nativedroid2.css">
@@ -40,85 +40,87 @@
         <a href="#MenuPanel" class="ui-btn ui-btn-left"><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
         <h1>Create Event</h1>
     </div>
-      
+    
+    <!-- menu panel   -->
     <div data-role="panel" id="MenuPanel" data-display="overlay" data-position-fixed="true">
-    	<div class='nd2-sidepanel-profile wow fadeInDown'>
-    		<img class='profile-background' src="http://lorempixel.com/400/200/abstract/7/" />
-		<div class="row">
-			<div class='col-xs-4 center-xs'>
-				<div class='box'>
-					<img class="profile-thumbnail" src="http://ccl.northwestern.edu/Staff%20Pics/mike-horn.jpeg" />
-				</div>
-			</div>
-			<div class='col-xs-8'>
-				<div class='box profile-text'>
-					<strong>Mike Horn</strong>
-					<span class='subline'>Assistant Professor</span>
-				</div>
-			</div>			
-		</div>	
-    	</div> 
-    	<ul data-role="listview" data-inset="false">
-    		<li><a href="homepage.html" data-ajax='false' data-icon="false">Home</a></li>
-    	</ul>
-    	<ul data-role="listview" data-inset="false">
-		<li data-role="list-divider">Events</li>
-	</ul>
-	<div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">			
-		<h3>Event Options</h3>
-		<ul data-role="listview" data-inset="false" data-icon="false">
-			<li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-			<li><a href="starred.html" data-ajax='false' data-icon="false">Starred</a></li>
-			<li><a href="homepage.html" data-ajax='false' data-icon="false">Recommended Events</a></li>
-			<li><a href="index.html" data-ajax='false' data-icon="false">Create Event</a></li>
-			<li><a href="filter.html" data-ajax='false' data-icon="false">Filter Events</a></li>
-		</ul>
-	</div>
-	<ul data-role="listview" data-inset="false">
-		<li data-role="list-divider">Account</li>
-	</ul>
-	<div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
-		<h3>Account Options</h3>
-		<ul data-role="listview" data-icon="false">
-			<li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
-			<li><a href="editprofile.html" class="ui-disabled" data-ajax='false'>Edit Profile</a></li>
-		</ul>
-	</div>
-	<hr class="inset">
-	<ul data-role="listview" data-inset="false">
-		<li data-role="list-divider">Options</li>
-	</ul>
-	<ul data-role="listview" data-icon="false">
-		<li><a href="settings.html" data-ajax='false'>Settings</a></li>
-		<li><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
-	</ul>
+        <div class='nd2-sidepanel-profile wow fadeInDown'>
+            <img class='profile-background' src="http://lorempixel.com/400/200/abstract/7/" />
+            <div class="row">
+                <div class='col-xs-4 center-xs'>
+                    <div class='box'>
+                        <img class="profile-thumbnail" src="http://ccl.northwestern.edu/Staff%20Pics/mike-horn.jpeg" />
+                    </div>
+                </div>
+                <div class='col-xs-8'>
+                    <div class='box profile-text'>
+                        <strong>Mike Horn</strong>
+                        <span class='subline'>Assistant Professor</span>
+                    </div>
+                </div>          
+            </div>  
+        </div> 
+
+
+        <ul data-role="listview" data-inset="false">
+            <li><a href="homepage.html" data-ajax='false' data-icon="false">Home</a></li>
+        </ul>
+        <ul data-role="listview" data-inset="false">
+            <li data-role="list-divider">Events</li>
+        </ul>
+        <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">           
+            <h3>Event Options</h3>
+            <ul data-role="listview" data-inset="false" data-icon="false">
+                <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
+                <li><a href="starred.html" data-ajax='false' data-icon="false">Starred</a></li>
+                <li><a href="homepage.html" data-ajax='false' data-icon="false">Recommended Events</a></li>
+                <li><a href="index.html" data-ajax='false' data-icon="false">Create Event</a></li>
+                <li><a href="filter.html" data-ajax='false' data-icon="false">Filter Events</a></li>
+            </ul>
+        </div>
+        <ul data-role="listview" data-inset="false">
+            <li data-role="list-divider">Account</li>
+        </ul>
+        <div data-role="collapsible" data-inset="false" data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+            <h3>Account Options</h3>
+            <ul data-role="listview" data-icon="false">
+                <li><a href="yourevents.html" data-ajax='false' data-icon="false">Your Events</a></li>
+                <li><a href="editprofile.html" class="ui-disabled" data-ajax='false'>Edit Profile</a></li>
+            </ul>
+        </div>
+        <hr class="inset">
+        <ul data-role="listview" data-inset="false">
+            <li data-role="list-divider">Options</li>
+        </ul>
+        <ul data-role="listview" data-icon="false">
+            <li><a href="settings.html" data-ajax='false'>Settings</a></li>
+            <li><a href="homescreen.html" data-ajax='false'>Sign Out</a></li>
+        </ul>
         <!--<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>-->
     </div>
+    <!-- /menu panel -->
       
     <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
     <form>
-	    <label for="text-basic">Event Name</label>
-	    <input type="text" name="text-basic" id="text-basic" value="" placeholder="Type your event name here...">
-    </form>
+        <label for="text-basic">Event Name</label>
+        <input type="text" name="text-basic" id="text-basic" value="" placeholder="Type your event name here...">
     
     <!--TESTING-->
  <!--   <form>-->
  <!--   <div id="ch-event-cat">-->
-	<!--<ul data-role="listview" data-filter="true" data-filter-reveal="false" data-filter-placeholder="Search event categories...">-->
-	<!--	<li data-role='list-divider'>Sports</li>-->
-	<!--	<li><option value="badminton">Badminton</option></li>-->
-	<!--	<li><option value="basketball">Basketball</option></li>-->
-	<!--	<li><option value="squash">Squash</option></li>-->
-	<!--	<li data-role='list-divider'>Board Games</li>-->
-	<!--	<li><option value="bridge">Bridge</option></li>-->
-	<!--	<li><option value="chess">Chess</option></li>-->
-	<!--</ul>-->
+    <!--<ul data-role="listview" data-filter="true" data-filter-reveal="false" data-filter-placeholder="Search event categories...">-->
+    <!--    <li data-role='list-divider'>Sports</li>-->
+    <!--    <li><option value="badminton">Badminton</option></li>-->
+    <!--    <li><option value="basketball">Basketball</option></li>-->
+    <!--    <li><option value="squash">Squash</option></li>-->
+    <!--    <li data-role='list-divider'>Board Games</li>-->
+    <!--    <li><option value="bridge">Bridge</option></li>-->
+    <!--    <li><option value="chess">Chess</option></li>-->
+    <!--</ul>-->
  <!--   </div>-->
  <!--   </form>-->
     <!--END TESTING-->
     
-    <form>
-    	<label>Event Category</label>
+        <label>Event Category</label>
     <!--<div id="ch-event-cat">-->
         <select id="title-filter-menu" data-native-menu="false" class="filterable-select">
         <option value="archery">Archery</option>
@@ -126,18 +128,15 @@
         <option value="basketball">Basketball</option>
         <option value="squash">Squash</option>
         </select>
-    <!--</div>-->
-    </form>       
+    <!--</div>-->     
     
     <!--TESTING-->
-    <form>
     <label for="select-choice-1b" class="select">Location</label>
     <select name="select-choice-1" id="select-choice-1b" data-native-menu="false">
-	    <option value="blomct1">Blomquist Court 1</option>
-	    <option value="blomct2">Blomquist Court 2</option>
-	    <option value="plexoutdoorct">Plex Outdoor Court</option>
+        <option value="blomct1">Blomquist Court 1</option>
+        <option value="blomct2">Blomquist Court 2</option>
+        <option value="plexoutdoorct">Plex Outdoor Court</option>
     </select>
-    </form>
     <!--END TESTING-->
     
     <!--<form>-->
@@ -152,28 +151,21 @@
     <!--</div>-->
     <!--</form>   -->
             
-    <form action="#" method="get">
     <div data-role="fieldcontain" placeholder="Date">
         <label for="date">Date</label>
         <input type="date" name="date" id="date" value=""  />
     </div>      
-    </form>
      
-    <form>
     <div class="ui-field-contain">     
         <label for="time-1">Start Time</label>
         <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
     </div>    
-    </form>
         
-    <form>
     <div class="ui-field-contain">     
         <label for="time-1">End Time</label>
         <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
     </div>
-    </form>
     
-    <form>
     <label>Share</label>
     <div class="ui-field-contain">
         <fieldset data-role="controlgroup" data-type="horizontal">
@@ -185,9 +177,7 @@
         <label for="checkbox-h-2c">Google +</label>
         </fieldset>
     </div>
-    </form>
     
-    <form>
     <div class="ui-grid-a2">
     
     <div class="ui-block-a2">            
@@ -204,15 +194,12 @@
         </fieldset>
     <!--</div>-->
     
-    </div>
-    </form>   
+    </div>   
       
-    <form>
     <div class="ui-field-contain">
         <label for="textarea-1">Description</label>
         <textarea name="textarea-1" id="textarea-1"></textarea>
     </div>
-    </form>
     
     <div id="submit-btn">
     <a href="#" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-mail-send"></i> Submit Event</a>
@@ -221,12 +208,13 @@
     <!--<div id="submit-btn">        -->
     <!--    <a href="#two"><button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Submit</button></a>      -->
     <!--</div> -->
-      
+    
+    </form>  
     </div>
   
     <!-- "Create A Profile" page -->
   
-    <div data-role="page" id="two">
+<!--     <div data-role="page" id="two">
       
     <div data-role="header" data-theme="a" data-position="fixed">       
         <h1>Create A Profile</h1>
@@ -275,8 +263,7 @@
         </fieldset>
     </div>
             
-    </div>
-    </div>
+    </div> -->
 
     <!-- "Edit Profile" page -->
 
