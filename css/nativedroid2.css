@@ -931,8 +931,8 @@ textarea.ui-input-text.ui-textinput-autogrow {
 .ui-input-text:after,
 .ui-input-search:after {
 	content: "";
-	position: relative;
-	width: 100%;
+	position: absolute;
+	width: 90%;
 	height: 1px;
 	background-color: #cccccc;
 
