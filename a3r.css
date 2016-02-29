@@ -1,12 +1,12 @@
 #signout{
     color: #f44e03;
 }
-div.tableRow {
-    display: table-row;
-}
+/*div.tableRow {*/
+/*    display: table-row;*/
+/*}*/
 
-div.tableRow p {
-    display: table-cell;
-    vertical-align: top;
-    padding: 3px;
-}
+/*div.tableRow p {*/
+/*    display: table-cell;*/
+/*    vertical-align: top;*/
+/*    padding: 3px;*/
+/*}*/
