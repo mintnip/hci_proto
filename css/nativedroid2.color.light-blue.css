@@ -73,6 +73,7 @@ html .ui-page-theme-a .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
 
 textarea.ui-input-text.ui-textinput-autogrow.ui-focus {
 	border-bottom: 2px solid #03A9F4;
+	left: 80%;
 }
 
 .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active {
