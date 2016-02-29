@@ -15,9 +15,6 @@
     <!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
     <!--<link href="create_event.css" rel="stylesheet" type="text/css">    -->
     <style>
-    hr{
-      width: 80%; 
-    }
     .ui-block-a{
         margin-top: 20px;
     }
@@ -63,7 +60,7 @@
   <form>
     <div class="tableRow"><p><label for="text-1">Email:</label></p></div>
     <div class="tableRow">
-      <p><input type="email" name="text-1" id="text-1" placeholder="@(u.)northwestern.edu email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Valid email address" required></p>
+      <p><input type="email" name="text-1" id="text-1" placeholder="Northwestern email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Valid email address" required></p>
     </div>
     <!-- <label style="margin:20px;" for="text-1">Password:</label> -->
     <div class="tableRow">
@@ -73,10 +70,11 @@
   </form>
 
   <div id="login-btn">
-      <a href="#one" class="ui-btn ui-btn-raised clr-primary">Log In</a>
+      <a href="#one" class="ui-btn ui-btn-raised clr-btn-amber">Log In</a>
   </div>
   </div>
   
+  <div style="padding:20px;">
   <div id="ch-event-cat">
     <p></p>
     <p></p>
@@ -84,6 +82,7 @@
   </div> 
     
   <div style="margin: 20px; margin-left:60px; margin-right:60px;"><a href="#five" class="ui-btn ui-btn-b">Create A Profile</a></div>
+  </div>
 
   </div>
 </div>
@@ -92,50 +91,57 @@
 
 <div data-role="page" id="one">      
 
-<div data-role="header" data-theme="a" data-position="fixed">
-<a href="#MenuPanel1" data-icon="bars" data-iconpos="notext">Menu</a>
+    <div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
+        <nd2-include data-src="panel.left.html"></nd2-include>
 
-<h1>Home</h1>
+        <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
+            <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
+            <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
+            <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
+        </div>
 
-<a href="#Search" data-rel="popup" data-icon="search" data-iconpos="notext">Search</a>
+        <div data-role="popup" id="Search" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+            <p>Let's search for the meaning of life!</p>
+            <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+        </div>
 
-</div>
+        <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">    
 
-<div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel1">
-<ul data-role="listview">
-<li data-icon="false"><a href="#one">Home</a></li>
-<li data-icon="false"><a href="#two">Edit Profile</a></li>
-<li data-icon="false"><a href="#three">Create Event</a></li>
-<li data-icon="false"><a href="#four">View Event</a></li>
-  <li data-icon="false"><a href="#login">Sign Out</a></li>
-</ul>
-</div>
+        <div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
+        <nd2-include data-src="panel.left.html"></nd2-include>
 
-<div data-role="popup" id="Search" class="ui-content">
-<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
-<p>Let's search for the meaning of life!</p>
-<input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
-</div>
+        <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
+            <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
+            <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
+            <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
+        </div>
 
+        <div data-role="popup" id="Search" class="ui-content">
+            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+            <p>Let's search for the meaning of life!</p>
+            <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+        </div>
 
-  <div data-role="content">
-      <ul data-role="listview">
-        <li><a href="#"> <img src="http://placehold.it/100x100" />
-            <h3>Badminton Game for 2</h3>
-            <p>Time: Wed, 12 to 2 pm</p>
-            <p>Skill Level: Beginner</p>
-        </a></li>
-        <li><a href="#"> <img src="http://placehold.it/100x100" />
-            <h3>2-on-2 Basketball</h3>
-            <p>Time: Wed, 2 to 4 pm</p>
-            <p>Skill Level: All</p>
-        </a></li>
-        <li><a href="#"> <img src="http://placehold.it/100x100" />
-            <h3>Chess Game</h3>
-            <p>Time: Sat, 6 to 7 pm</p>
-            <p>Skill Level: Advanced</p>
-        </a></li>
-      </ul>
+    <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+
+        <ul data-role="listview">
+          <li><a href="#four"> <img src="http://placehold.it/100x100" />
+              <h3>Badminton Game for 2</h3>
+              <p>Time: Wed, 12 to 2 pm</p>
+              <p>Skill Level: Beginner</p>
+          </a></li>
+          <li><a href="#"> <img src="http://placehold.it/100x100" />
+              <h3>2-on-2 Basketball</h3>
+              <p>Time: Wed, 2 to 4 pm</p>
+              <p>Skill Level: All</p>
+          </a></li>
+          <li><a href="#"> <img src="http://placehold.it/100x100" />
+              <h3>Chess Game</h3>
+              <p>Time: Sat, 6 to 7 pm</p>
+              <p>Skill Level: Advanced</p>
+          </a></li>
+        </ul>
     </div>
 
 </div>
@@ -166,7 +172,7 @@
 <div data-role="content">    
 <input type="text" name="text-6" id="text-6" value="Abhishek Patil" placeholder="Your Name">
 
-<input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="abhishekpatil2016@u.northwestern.edu">
+<input type="text" name="text-6" id="text-6" value="abhishekpatil2016@u.northwestern.edu" placeholder="@u.northwestern.edu">
 
 <input type="text" name="text-6" id="text-6" value="******" placeholder="Password">
 
@@ -251,10 +257,10 @@
 <div class="ui-field-contain">
 <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
 <option>Choose Location</option>
-<option value="Bloomquist Court 1">Bloomquist Court 1</option>
-<option value="Bloomquist Court 2">Bloomquist Court 2</option>
-<option value="Bloomquist Court 3">Bloomquist Court 3</option>
-<option value="Bloomquist Court 4">Bloomquist Court 4</option>
+<option value="Bloomquist Court 1">Blomquist Court 1</option>
+<option value="Bloomquist Court 2">Blomquist Court 2</option>
+<option value="Bloomquist Court 3">Blomquist Court 3</option>
+<option value="Bloomquist Court 4">Blomquist Court 4</option>
 </select>
 </div>
 </form>   
