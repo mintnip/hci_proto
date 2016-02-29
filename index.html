@@ -89,63 +89,62 @@
 
 <!-- "Home" Page -->
 
-<div data-role="page" id="one">      
+<div data-role="page" id="one" class="nd2-no-menu-swipe ui-page-theme-a">
+    <nd2-include data-src="panel.left.html"></nd2-include>
 
-    <div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
-        <nd2-include data-src="panel.left.html"></nd2-include>
-
-        <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
-            <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
-            <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
-            <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
-        </div>
-
-        <div data-role="popup" id="Search" class="ui-content">
-            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
-            <p>Let's search for the meaning of life!</p>
-            <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
-        </div>
-
-        <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">    
-
-        <div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
-        <nd2-include data-src="panel.left.html"></nd2-include>
-
-        <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
-            <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
-            <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
-            <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
-        </div>
-
-        <div data-role="popup" id="Search" class="ui-content">
-            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
-            <p>Let's search for the meaning of life!</p>
-            <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
-        </div>
-
-    <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
-
-        <ul data-role="listview">
-          <li><a href="#four"> <img src="http://placehold.it/100x100" />
-              <h3>Badminton Game for 2</h3>
-              <p>Time: Wed, 12 to 2 pm</p>
-              <p>Skill Level: Beginner</p>
-          </a></li>
-          <li><a href="#"> <img src="http://placehold.it/100x100" />
-              <h3>2-on-2 Basketball</h3>
-              <p>Time: Wed, 2 to 4 pm</p>
-              <p>Skill Level: All</p>
-          </a></li>
-          <li><a href="#"> <img src="http://placehold.it/100x100" />
-              <h3>Chess Game</h3>
-              <p>Time: Sat, 6 to 7 pm</p>
-              <p>Skill Level: Advanced</p>
-          </a></li>
-        </ul>
+    <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
+        <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
+        <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
     </div>
 
+    <div data-role="popup" id="Search" class="ui-content">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+        <p>Let's search for the meaning of life!</p>
+        <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+    </div>
+
+    <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">    
+
+    <div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
+    <nd2-include data-src="panel.left.html"></nd2-include>
+
+    <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
+        <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
+        <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
+    </div>
+
+    <div data-role="popup" id="Search" class="ui-content">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+        <p>Let's search for the meaning of life!</p>
+        <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+    </div>
+
+<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+
+    <ul data-role="listview">
+      <li><a href="#four"> <img src="http://placehold.it/100x100" />
+          <h3>Badminton Game for 2</h3>
+          <p>Time: Wed, 12 to 2 pm</p>
+          <p>Skill Level: Beginner</p>
+      </a></li>
+      <li><a href="#"> <img src="http://placehold.it/100x100" />
+          <h3>2-on-2 Basketball</h3>
+          <p>Time: Wed, 2 to 4 pm</p>
+          <p>Skill Level: All</p>
+      </a></li>
+      <li><a href="#"> <img src="http://placehold.it/100x100" />
+          <h3>Chess Game</h3>
+          <p>Time: Sat, 6 to 7 pm</p>
+          <p>Skill Level: Advanced</p>
+      </a></li>
+    </ul>
 </div>
 
+</div>
+</div>
+</div>
 
 
 
