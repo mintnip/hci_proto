@@ -99,23 +99,68 @@
 
 <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
 
-    <ul data-role="listview">
-      <li><a href="#four"> <img src="http://placehold.it/100x100" />
-          <h3>Badminton Game for 2</h3>
-          <p>Time: Wed, 12 to 2 pm</p>
-          <p>Skill Level: Beginner</p>
-      </a></li>
-      <li><a href="#"> <img src="http://placehold.it/100x100" />
-          <h3>2-on-2 Basketball</h3>
-          <p>Time: Wed, 2 to 4 pm</p>
-          <p>Skill Level: All</p>
-      </a></li>
-      <li><a href="#"> <img src="http://placehold.it/100x100" />
-          <h3>Chess Game</h3>
-          <p>Time: Sat, 6 to 7 pm</p>
-          <p>Skill Level: Advanced</p>
-      </a></li>
-    </ul>
+      <ul data-role="listview">
+        <li><a href="#"> <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeH20lJbrnuzQz5i2ToikBkizQr2jO-k_a5F-MoS0zPMoQy9Hl" />
+            <h3>Badminton Game for 2</h3>
+            <p>Time: Wed, 12 to 2 pm</p>
+            <p>Skill Level: Beginner</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/Q/I/V/k/y/2/black-basketball-th.png" />
+            <h3>2-on-2 Basketball</h3>
+            <p>Time: Wed, 2 to 4 pm</p>
+            <p>Skill Level: All</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/G/s/v/L/g/Z/chess-th.png" />
+            <h3>Chess Game</h3>
+            <p>Time: Sat, 6 to 7 pm</p>
+            <p>Skill Level: Advanced</p>
+        </a></li>
+        <li><a href="#"> <img src="http://img5.cliparto.com/pic/s/266872/5542718-racket-for-playing-table-tennis-icon.jpg" />
+            <h3>Table Tennis</h3>
+            <p>Time: Sat, 8pm to 10pm</p>
+            <p>Skill Level: Beginner</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/E/u/t/l/x/I/archery-th.png" />
+            <h3>Archery</h3>
+            <p>Time: Sun, 12 to 4 pm</p>
+            <p>Skill Level: All</p>
+        </a></li>
+        <li><a href="#"> <img src="http://images.clipartpanda.com/tennis-court-clipart-hotel-icon-has-tennis-court-th.png" />
+            <h3>Tennis for Two</h3>
+            <p>Time: Sun, 1 to 5 pm</p>
+            <p>Skill Level: Advanced</p>
+        </a></li>
+        <li><a href="#"> <img src="http://images.clipartpanda.com/soccer-ball-clipart-no-background-1237099752389782475nicubunu_Soccer_ball.svg.thumb.png" />
+            <h3>Soccer</h3>
+            <p>Time: Mon, 9 to 11 am</p>
+            <p>Skill Level: Beginner</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/J/I/k/5/K/5/american-football-th.png" />
+            <h3>Football</h3>
+            <p>Time: Mon, 2 to 5 pm</p>
+            <p>Skill Level: All</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/G/s/v/L/g/Z/chess-th.png" />
+            <h3>Chess</h3>
+            <p>Time: Mon, 6 to 7 pm</p>
+            <p>Skill Level: Advanced</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.spraypaintstencils.com/a-zlistings/lacrosse-stick-thumb.gif" />
+            <h3>Lacrosse</h3>
+            <p>Time: Tues, 12 to 2 pm</p>
+            <p>Skill Level: Beginner</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/Q/I/V/k/y/2/black-basketball-th.png" />
+            <h3>2-on-2 Basketball</h3>
+            <p>Time: Tues, 2 to 4 pm</p>
+            <p>Skill Level: All</p>
+        </a></li>
+        <li><a href="#"> <img src="http://www.clker.com/cliparts/L/1/Q/D/H/f/mich-th.png" />
+            <h3>Golf</h3>
+            <p>Time: Tues, 3 to 7 pm</p>
+            <p>Skill Level: Advanced</p>
+        </a></li>
+      </ul>
 </div>
 
 </div>
@@ -145,7 +190,7 @@
 <div data-role="content">    
 <input type="text" name="text-6" id="text-6" value="Abhishek Patil" placeholder="Your Name">
 
-<input type="text" name="text-6" id="text-6" value="abhishekpatil2016@u.northwestern.edu" placeholder="@u.northwestern.edu">
+<input type="text" name="text-6" id="text-6" value="@u.northwestern.edu" placeholder="abhishekpatil2016@u.northwestern.edu">
 
 <input type="text" name="text-6" id="text-6" value="******" placeholder="Password">
 
@@ -187,126 +232,134 @@
 
 <!-- "Create Event" page -->
 
-<div data-role="page" id="three">
+<div data-role="page" class="nd2-no-menu-swipe ui-page-theme-a">
+    <nd2-include data-src="panel.left.html"></nd2-include>
 
-<div data-role="header" data-theme="a" data-position="fixed">
-<a href="#MenuPanel2" data-icon="bars" data-iconpos="notext">Menu</a>
+    <div data-role="header" data-position="fixed" class="wow fadeIn ui-header">
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu zmdi-hc-5x"></i></a>
+        <h1 class="wow fadeIn" data-wow-delay='0.4s'>Create Event</h1>
+        <a href="#Search" data-rel="popup"><i class="zmdi zmdi-search"></i></a>
+    </div>
 
-<h1>Create Event</h1>
+    <div data-role="popup" id="Search" class="ui-content">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+        <p>Let's search for the meaning of life!</p>
+        <input type="text" name="text-6" id="text-6" value="" placeholder="e.g. Badminton, Volleyball...">
+    </div>
+
+    <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+    <form>
+        <label for="text-basic">Event Name</label>
+        <input type="text" name="text-basic" id="text-basic" value="" placeholder="Type your event name here...">
+    
+    <!--TESTING-->
+ <!--   <form>-->
+ <!--   <div id="ch-event-cat">-->
+    <!--<ul data-role="listview" data-filter="true" data-filter-reveal="false" data-filter-placeholder="Search event categories...">-->
+    <!--    <li data-role='list-divider'>Sports</li>-->
+    <!--    <li><option value="badminton">Badminton</option></li>-->
+    <!--    <li><option value="basketball">Basketball</option></li>-->
+    <!--    <li><option value="squash">Squash</option></li>-->
+    <!--    <li data-role='list-divider'>Board Games</li>-->
+    <!--    <li><option value="bridge">Bridge</option></li>-->
+    <!--    <li><option value="chess">Chess</option></li>-->
+    <!--</ul>-->
+ <!--   </div>-->
+ <!--   </form>-->
+    <!--END TESTING-->
+    
+        <label>Event Category</label>
+    <!--<div id="ch-event-cat">-->
+        <select id="title-filter-menu" data-native-menu="false" class="filterable-select" data-filter-placeholder="Search event categories...">
+        <option value="archery">Archery</option>
+        <option value="badminton">Badminton</option>
+        <option value="basketball">Basketball</option>
+        <option value="squash">Squash</option>
+        </select>
+    <!--</div>-->     
+    
+    <!--TESTING-->
+    <label for="select-choice-1b" class="select">Location</label>
+    <select name="select-choice-1" id="select-choice-1b" data-native-menu="false">
+        <option value="blomct1">Blomquist Court 1</option>
+        <option value="blomct2">Blomquist Court 2</option>
+        <option value="plexoutdoorct">Plex Outdoor Court</option>
+    </select>
+    <!--END TESTING-->
+    
+    <!--<form>-->
+    <!--<div class="ui-field-contain">-->
+    <!--    <select name="select-custom-1" id="select-custom-1" data-native-menu="false">-->
+    <!--    <option>Choose Location</option>-->
+    <!--    <option value="orange">Orange</option>-->
+    <!--    <option value="apple">Apple</option>-->
+    <!--    <option value="peach">Peach</option>-->
+    <!--    <option value="lemon">Lemon</option>-->
+    <!--    </select>-->
+    <!--</div>-->
+    <!--</form>   -->
+            
+    <div data-role="fieldcontain" placeholder="Date">
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" value=""  />
+    </div>      
+     
+    <div class="ui-field-contain">     
+        <label for="time-1">Start Time</label>
+        <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
+    </div>    
+        
+    <div class="ui-field-contain">     
+        <label for="time-1">End Time</label>
+        <input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
+    </div>
+    
+    <label>Share</label>
+    <div class="ui-field-contain">
+        <fieldset data-role="controlgroup" data-type="horizontal">
+        <input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
+        <label for="checkbox-h-2a">Facebook</label>
+        <input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
+        <label for="checkbox-h-2b">Twitter</label>
+        <input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
+        <label for="checkbox-h-2c">Google +</label>
+        </fieldset>
+    </div>
+    
+    <div class="ui-grid-a">
+    
+    <div class="ui-block-a">
+        <label for="spin">No. of Participants</label>
+        <input type="number" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
+    </div>
+
+    <div class="ui-block-b">
+        <fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
+        <input type="radio" name="radio-choice-1" id="radio-choice-1b" value="preferred" checked="checked">
+        <label for="radio-choice-1b">Preferred</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-2b" value="max">
+        <label for="radio-choice-2b">Maximum</label>
+        </fieldset>
+    </div>
+    
+    </div>   
+      
+    <div class="ui-field-contain">
+        <label for="textarea-1">Description</label>
+        <textarea name="textarea-1" id="textarea-1"></textarea>
+    </div>
+    
+    <div id="submit-btn">
+    <a href="#" class="ui-btn ui-btn-raised clr-primary"><i class="zmdi zmdi-mail-send"></i> Submit Event</a>
+    </div>
+    
+    <!--<div id="submit-btn">        -->
+    <!--    <a href="#two"><button class="ui-btn ui-btn-icon-left ui-shadow-icon ui-btn-b">Submit</button></a>      -->
+    <!--</div> -->
+    
+    </form>  
+    </div>
 </div>
-
-
-<div data-role="panel" data-display="overlay" data-theme="a" id="MenuPanel2">
-<ul data-role="listview">
-<li data-icon="false"><a href="#one">Home</a></li>
-<li data-icon="false"><a href="#two">Edit Profile</a></li>
-<li data-icon="false"><a href="#three">Create Event</a></li>
-<li data-icon="false"><a href="#four">View Event</a></li>
-  <li data-icon="false"><a href="#login">Sign Out</a></li>
-</ul>
-</div>
-
-
-
-<form>
-<div data-role="content">        
-<input type="text" name="text-6" id="text-6" value="" placeholder="Event Name">
-</div>
-</form>
-
-<form>
-<div id="ch-event-cat">
-<select id="title-filter-menu" data-native-menu="false" class="filterable-select">
-<option>Choose Event Category</option>
-<option value="Archery">Archery</option>
-<option value="Badminton">Badminton</option>
-<option value="Basketball">Basketball</option>
-<option value="Squash">Squash</option>
-</select>
-</div>
-</form>       
-
-<form>
-<div class="ui-field-contain">
-<select name="select-custom-1" id="select-custom-1" data-native-menu="false">
-<option>Choose Location</option>
-<option value="Bloomquist Court 1">Blomquist Court 1</option>
-<option value="Bloomquist Court 2">Blomquist Court 2</option>
-<option value="Bloomquist Court 3">Blomquist Court 3</option>
-<option value="Bloomquist Court 4">Blomquist Court 4</option>
-</select>
-</div>
-</form>   
-
-<form action="#" method="get">
-<div data-role="fieldcontain" placeholder="Date">
-<label for="date">Date:</label>
-<input type="date" name="date" id="date" value=""  />
-</div>      
-</form>
-
-<form>
-<div class="ui-field-contain">     
-<label for="time-1">Start Time</label>
-<input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-</div>    
-</form>
-
-<form>
-<div class="ui-field-contain">     
-<label for="time-1">End Time</label>
-<input type="time" data-clear-btn="true" name="time-1" id="time-1" value="">
-</div>
-</form>
-
-<form>
-<div class="ui-field-contain">
-<fieldset data-role="controlgroup" data-type="horizontal">
-<legend>Share:</legend>
-<input type="checkbox" name="checkbox-h-2a" id="checkbox-h-2a">
-<label for="checkbox-h-2a">Facebook</label>
-<input type="checkbox" name="checkbox-h-2b" id="checkbox-h-2b">
-<label for="checkbox-h-2b">Twitter</label>
-<input type="checkbox" name="checkbox-h-2c" id="checkbox-h-2c">
-<label for="checkbox-h-2c">Google +</label>
-</fieldset>
-</div>
-</form>
-
-<form>
-<div class="ui-grid-a">
-
-<div class="ui-block-a">            
-<label for="spin">No. of Participants:</label>
-<input type="text" data-role="spinbox" name="spin" id="spin" data-options='{"type":"horizontal"}' value="0" min="0" max="100"/>
-</div>
-
-<div class="ui-block-b">
-<fieldset data-role="controlgroup" data-mini="true" id="pref-button">        
-<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
-<label for="radio-choice-v-2a">Preferred</label>
-<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
-<label for="radio-choice-v-2b">Max.</label>
-</fieldset>
-</div>
-
-</div>
-</form>   
-
-<form>
-<div class="ui-field-contain">
-<label for="textarea-1">Description:</label>
-<textarea name="textarea-1" id="textarea-1"></textarea>
-</div>
-</form>
-
-<div id="submit-btn">  
-<a href="#four" class="ui-btn ui-btn-b" >Submit</a>     
-</div> 
-
-
-
-</div> 
 
 <!-- "View Event" Page -->
 
@@ -364,8 +417,8 @@
     <h3>Team Members</h3>
   </div>
   <div class="ui-body ui-body-a">
-    <img src="user1.jpeg" alt="Mike" class="profile2" ></img>
-<img src="user2.jpeg" alt="Michael" class="profile2" ></img>
+    <img src="usr1.jpg" alt="Mike" class="profile2" ></img>
+<img src="usr2.jpg" alt="Michael" class="profile2" ></img>
 
   </div>
 </div>
@@ -403,6 +456,7 @@
   
 
 </div>
+
 
 
 <!-- "Create A Profile" page -->
