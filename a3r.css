@@ -7,6 +7,9 @@
 #login {
     background-color: #03A9F4;
 }
+.ui-field-contain{
+    margin: 20px;
+}
 .ui-content img {
     padding-right: 20px;
     padding-top: 10px;
