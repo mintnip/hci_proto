@@ -37,8 +37,11 @@
     .ui-input-text:after, .ui-input-search:after {
         max-width: 100%;
     }
-    #uploadFile:after {
-/*        border-bottom: 0px;*/
+    .upImg {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .upImg .ui-input-text:after, .ui-input-search:after {
         height: 0px;
     }
     .tableRow .ui-input-text:after, .ui-input-search:after {
@@ -229,7 +232,7 @@
     <div id="ch-event-cat"><div class="ui-bar ui-bar-a" style="height:20px"><center>Photo Upload</center></div></div>  
 
     <div id="imagePreview2" class="uploadPreview"></div>
-    <div id="upImg">
+    <div class="upImg">
       <input id="uploadFile2" type="file" name="image" class="img" />  
     </div> 
 
@@ -493,7 +496,7 @@
 
 
     <div id="imagePreview" class="uploadPreview"></div>
-    <div id="upImg">
+    <div class="upImg">
       <input id="uploadFile" type="file" name="image" class="img" />  
     </div>          
 
